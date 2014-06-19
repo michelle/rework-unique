@@ -1,0 +1,29 @@
+body,
+.test {
+  background: red;
+}
+
+body {
+  color: blue;
+}
+
+body {
+  background: red;
+}
+
+body {
+  background: blue;
+}
+
+body {
+  color: red;
+}
+
+body {
+  color: red;
+  background: blue;
+}
+
+.test {
+  background: red;
+}

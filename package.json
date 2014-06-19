@@ -1,0 +1,22 @@
+{
+  "name": "rework-unique",
+  "version": "0.0.1",
+  "description": "A rework plugin to ensure only unique CSS rules.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/michelle/rework-unique.git"
+  },
+  "author": "Michelle Bu",
+  "license": "MIT",
+  "devDependencies": {
+    "rework": "~0.20.3",
+    "diff": "~1.0.8"
+  }
+}
