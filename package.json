@@ -1,6 +1,6 @@
 {
   "name": "rework-unique",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A rework plugin to ensure only unique CSS rules.",
   "main": "index.js",
   "directories": {
