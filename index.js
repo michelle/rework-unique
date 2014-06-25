@@ -5,11 +5,14 @@ module.exports = function() {
   function removeDuplicates(rules) {
     var uniqueRules = {},
       length = rules.length,
-      i, rule;
+      i, rule, normalized;
 
     for (i = 0; i < length; i += 1) {
       rule = rules[i];
-      uniqueRules[normalize(rule)] = rule;
+      normalized = normalize(rule);
+
+      delete uniqueRules[normalized];
+      uniqueRules[normalized] = rule;
     }
 
     var normalizedRules = Object.keys(uniqueRules),

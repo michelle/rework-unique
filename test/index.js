@@ -2,11 +2,11 @@ var rework = require('rework');
 var unique = require('../');
 var diff = require('diff');
 var fs = require('fs');
-var FILE = 'test/css/unique';
+var FILE = 'test/css/';
 
-function testUnique() {
-  var expected = fs.readFileSync(FILE + '.out.css', 'utf8').trim();
-  var actual = rework(fs.readFileSync(FILE + '.css', 'utf8'))
+function test(type) {
+  var expected = fs.readFileSync(FILE + type + '.out.css', 'utf8').trim();
+  var actual = rework(fs.readFileSync(FILE + type + '.css', 'utf8'))
     .use(unique())
     .toString()
     .trim();
@@ -25,7 +25,9 @@ function testUnique() {
     }
     throw new Error(error);
   }
-  console.log('Unique test passed!');
+  console.log(type + ' test passed!');
 }
 
-testUnique();
+
+test('unique');
+test('order');

@@ -4,10 +4,6 @@ body,
 }
 
 body {
-  color: blue;
-}
-
-body {
   background: red;
 }
 
@@ -17,6 +13,10 @@ body {
 
 body {
   color: red;
+}
+
+body {
+  color: blue;
 }
 
 body {
